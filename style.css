@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color:midnightblue;
+    display: flex;
+}
+header .title{
+    width: 30%;
+    color: white;
+    margin: 20px;
+    margin-left: 5%;
+}
+header .title h1{
+    display: inline-block;
+}
+header .title p{
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid white;
+}
+header nav{
+    width: 40%;
+    margin: 35px;
+    padding-left: 20%;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+}
+header nav #login{
+    margin-left: 20%;
+    background-color: white;
+    color: midnightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+header nav a:hover{
+    text-decoration:underline;
+}
+section{
+    height: 320px;
+}
+section .category{
+    width: 20%;
+    float: left;
+    margin-top: 5px;
+}
+section .category a{
+    display: block;
+    text-decoration: none;
+    background-color:mintcream;
+    color: midnightblue;
+    margin: 5px 5px 30px 5px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+section .category a:hover{
+    background-color:dimgray;
+    color: white;
+}
+section .banner{
+    width: 80%;
+    height: 320px;
+    float: left;
+    margin-top: 10px;
+    background: url(images/banner3.jpg);
+    background-repeat:round;
+    border-radius: 5px;
+}
+section .banner h2{
+    margin-top: 100px;
+    margin-left: 50px;
+    color: white;
+}
+section .banner p{
+    margin: 10px 50px;
+    color:greenyellow;
+    font-size: 20px;
+}
+section .banner .btn{
+    margin-top: 80px;
+}
+section .banner a{
+    margin: 50px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: midnightblue;
+    border-radius: 30px;
+}
+section .banner a:hover{
+    text-decoration: underline;
+}
+.content{
+    padding: 20px;
+}
+.content h2{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+}
+.container .item{
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.container .item:hover{
+    transform: scale(1.05,1.1);
+}
+.container .item img{
+    width: 100%;
+    height: 200px;
+}
+.container .item p{
+    color:midnightblue;
+    font-size: 18px;
+}
+.container .item span{
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.container .item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: dimgray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.container .item a:hover{
+    background-color:midnightblue;
+}
+.content h2{
+    margin-top: 20px;
+}
+.content .title{
+    display: flex;
+    margin: 20px 0;
+    background-color:whitesmoke;
+    padding: 10px;
+    font-size: 20px;
+}
+.content .title p{
+    width: 90%;
+    text-align: left;
+    color: midnightblue;
+    padding: 10px 0 10px 70px;
+}
+
+.content .title a{
+    width: 10%;
+    float: right;
+    text-decoration: none;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+}
+.content .title a:hover{
+    background-color: midnightblue;
+    color: white;
+}
+.content .container .info{
+    width: 100%;
+    padding: 1rem;
+    border-right: 3px solid black;
+    margin-bottom: 1rem;
+}
+.content .container .info img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+}
+.content .container .info a{
+    text-decoration: none;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.content .container .info a:hover{
+    background-color: midnightblue;
+    color: white;
+}
+footer{
+    background-color:midnightblue;
+}
+footer .footer-content{
+    display: flex;
+}
+.footer-content .info,.links{
+    width: 50%;
+    text-align: justify;
+    padding: 30px 0 30px 100px;
+    margin-left: 20px;
+}
+.footer-content .info h3,.footer-content .links h3{
+    color: white;
+    font-size: 25px;
+}
+.footer-content .info ul,.footer-content .links ul{
+    list-style-type:square;
+    color: white;
+    padding: 20px 0 0 20px;
+}
+.footer-content .info ul li,.footer-content .links ul li{
+    margin-top: 10px;
+}
+.footer-content .links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content .links ul li a:hover{
+    text-decoration:underline;
+}
+footer .copyright{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer .icon{
+    color: white;
+    margin-left: 45%;
+    padding-bottom: 10px;
+}
+footer .icon i{
+    margin-left: 15px;
+}
+article{
+    display: flex;
+    width: 100%;
+}
+article img {
+    width: 30%;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.article {
+    width: 30%;
+    margin: 50px;
+}
+.article h1 {
+    text-align: center;
+}
+.article p {
+    margin-top: 30px;
+    line-height: 1.8rem;
+}
+iframe{
+    width: 30%;
+    padding: 50px 20px 0 0;
+}
+form{
+    width: 40%;
+    height: 550px;
+    margin: 50px 0 50px 30%;
+    border: 2px solid dimgray;
+    box-shadow: 10px 10px 20px mediumslateblue;
+}
+form h1{
+    padding: 20px;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+}
+form input{
+    margin:20px 0 20px 25%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#newPass{
+    margin-left: 25%;
+    text-decoration: none;
+    color: dimgray;
+}
+#newPass:hover{
+    text-decoration: underline;
+}
+form #btnlogin,#btnsignup{
+    background-color: whitesmoke;
+    color: midnightblue;
+}
+form #btnlogin:hover,#btnsignup:hover{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+form .alter{
+    text-align: center;
+    margin-top: 20px;
+}
+#fb,#google,#btnlogin,#btnsignup{
+    display: block;
+    margin: 20px 0 10px 25%;
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+#fb{
+    background-color: #3b5998;
+    color: white;
+}
+#google{
+    background-color: #d34836;
+    color: white;
+}
+#fb,#google:hover{
+    cursor: pointer;
+}
+.register-pg,.login-pg{
+    margin: 20px 0 10px 30px;
+}
+.register-pg p,.login-pg{
+    color: dimgray;
+}
+.register-pg p a,.login-pg p a{
+    text-decoration: none;
+}
+.registration{
+    height: 700px;
+}
