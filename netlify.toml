@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/shopping_website/*"
+to = "/shopping_website/html/index.html"
+status = 200
