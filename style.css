@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 header{
     background-color:midnightblue;
     display: flex;
@@ -34,7 +35,7 @@ header nav a{
     font-size: 16px;
 }
 header nav #login{
-    margin-left: 20%;
+    margin-left: 15%;
     background-color: white;
     color: midnightblue;
     border-radius: 10px;
@@ -260,6 +261,7 @@ article img {
 .article p {
     margin-top: 30px;
     line-height: 1.8rem;
+    text-align: justify;
 }
 iframe{
     width: 30%;
@@ -332,6 +334,119 @@ form .alter{
 .register-pg p a,.login-pg p a{
     text-decoration: none;
 }
-.registration{
-    height: 700px;
+.registration,.login{
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    header .title,
+    header nav {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding-left: 0;
+    }
+
+    header .title p {
+        margin-top: 5px;
+    }
+
+    header nav{
+        padding: 10px;
+    }
+
+    header nav a {
+        margin: 20px;
+    }
+
+    header nav #login {
+        margin: 20px;
+    }
+
+    section .category,
+    section .banner {
+        width: 100%;
+    }
+
+    section .banner{
+        margin-bottom: 20px;
+    }
+
+    section .category{
+        margin-top: 20px;
+    }
+
+    section .banner h2,section .banner p{
+        font-size: 16px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap; /*Allow items to wrap to the next line on smaller screens*/
+    }
+    
+    .container .item {
+        width: 70%; /* Adjust width to fit two items in a row on larger screens */
+        margin-left: 15%;
+    }
+    
+    .container .item img{
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    
+    .content .title p {
+        width: auto;
+        padding: 20px 5px;
+    }
+    
+    .content .title a {
+        width: auto;
+        margin: 10px;
+    }
+    
+    article{
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    article img{
+        width: 30%;
+        height: fit-content;
+        margin: 80px 10px;
+    }
+    .article{
+        width: 30%;
+        height: fit-content;
+        margin: 20px 30px;
+    }
+    iframe{
+        width: 25%;
+        height: max-content;
+        margin:50px 0;
+    }
+
+    .content .container .info{
+        border: none;
+    }
+    .content .container .info img{
+        margin-left: 40%;
+    }
+
+    form{
+        width: fit-content;
+        margin: 30px 25%;
+    }
+    form input,#newPass{
+        width: fit-content;
+        margin: 10px 40px;
+    }
+    form #btnlogin,form #btnsignup,#fb,#google{
+        margin: 10px 40px;
+    }
+    
 }
