@@ -39,7 +39,7 @@ header nav #login{
     background-color: white;
     color: midnightblue;
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
 }
 header nav a:hover{
     text-decoration:underline;
@@ -360,7 +360,7 @@ form .alter{
     }
 
     header nav{
-        padding: 10px;
+        padding: 3px;
     }
 
     header nav a {
@@ -369,7 +369,7 @@ form .alter{
     }
 
     header nav #login {
-        margin:0 20px;
+        margin:3px 6px 0 3px;
         float: right;
     }
 
@@ -465,8 +465,8 @@ form .alter{
         .footer-content .info,
         .footer-content .links {
             width: 100%;
-            padding: 20px;
-            margin-left: 0;
+            padding: 10px 3px;
+            text-align: left;
         }
     
         .icon {
