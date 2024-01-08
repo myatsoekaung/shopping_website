@@ -86,10 +86,9 @@ section .banner p{
     font-size: 20px;
 }
 section .banner .btn{
-    margin-top: 80px;
+    margin: 50px 50px 40px;
 }
 section .banner a{
-    margin: 50px;
     padding: 10px;
     text-decoration: none;
     background-color: white;
@@ -169,7 +168,7 @@ section .banner a:hover{
     border: 2px solid midnightblue;
     padding: 10px;
     text-align: center;
-    border-radius: 100px;
+    border-radius: 30px;
 }
 .content .title a:hover{
     background-color: midnightblue;
@@ -197,13 +196,15 @@ section .banner a:hover{
     background-color: midnightblue;
     color: white;
 }
-footer{
+#footer{
     background-color:midnightblue;
+    width:100%;
 }
-footer .footer-content{
+.footer-content{
     display: flex;
+    width: 100%;
 }
-.footer-content .info,.links{
+.footer-content .info,.footer-content .links{
     width: 50%;
     text-align: justify;
     padding: 30px 0 30px 100px;
@@ -228,17 +229,17 @@ footer .footer-content{
 .footer-content .links ul li a:hover{
     text-decoration:underline;
 }
-footer .copyright{
+.copyright{
     color: white;
     text-align: center;
     padding-bottom: 20px;
 }
-footer .icon{
+.icon{
     color: white;
     margin-left: 45%;
     padding-bottom: 10px;
 }
-footer .icon i{
+.icon i{
     margin-left: 15px;
 }
 article{
@@ -338,17 +339,20 @@ form .alter{
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width:320px) and (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
     }
 
-    header .title,
-    header nav {
-        width: 100%;
+    header .title{
+        width:100%;
         text-align: center;
+        margin: 10px auto;
+    }
+    header nav {
+        width:100%;
         margin: 10px 0;
-        padding-left: 0;
+        padding-left: 1px;
     }
 
     header .title p {
@@ -360,16 +364,20 @@ form .alter{
     }
 
     header nav a {
-        margin: 20px;
+        margin: 10px 5px;
+        float: left;
     }
 
     header nav #login {
-        margin: 20px;
+        margin:0 20px;
+        float: right;
     }
 
     section .category,
     section .banner {
         width: 100%;
+        height: max-content;
+        /* margin: 10px; */
     }
 
     section .banner{
@@ -380,34 +388,50 @@ form .alter{
         margin-top: 20px;
     }
 
-    section .banner h2,section .banner p{
-        font-size: 16px;
+    section .banner h2{
+        font-size:10px;
+        margin: 50px 10px 0;
+    }
+    
+    section .banner p{
+        font-size:10px;
+        margin: 5px 10px;
+    }
+
+    section .banner .btn{
+        margin: 20px 10px 30px;
+    }
+
+
+    section .banner a{
+        font-size: 10px;
     }
     
     .container {
         display: flex;
-        flex-wrap: wrap; /*Allow items to wrap to the next line on smaller screens*/
+        flex-wrap: wrap;
     }
     
     .container .item {
-        width: 70%; /* Adjust width to fit two items in a row on larger screens */
-        margin-left: 15%;
+        width: 100%;
+        margin: 10px;
     }
     
     .container .item img{
-        width: 300px;
-        height: 300px;
-        margin-left: 100px;
+        width: 100%;
+        height: min-content;
     }
     
     .content .title p {
         width: auto;
-        padding: 20px 5px;
+        font-size: 16px;
+        padding: 10px 5px;
     }
     
     .content .title a {
         width: auto;
         margin: 10px;
+        font-size: 16px;
     }
     
     article{
@@ -433,20 +457,65 @@ form .alter{
     .content .container .info{
         border: none;
     }
-    .content .container .info img{
-        margin-left: 40%;
-    }
+    
+        .footer-content {
+            flex-direction: column;
+        }
+    
+        .footer-content .info,
+        .footer-content .links {
+            width: 100%;
+            padding: 20px;
+            margin-left: 0;
+        }
+    
+        .icon {
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        .icon i {
+            margin-left: 5px;
+        }
 
-    form{
-        width: fit-content;
-        margin: 30px 25%;
-    }
-    form input,#newPass{
-        width: fit-content;
-        margin: 10px 40px;
-    }
-    form #btnlogin,form #btnsignup,#fb,#google{
-        margin: 10px 40px;
+        article {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        article img,
+        .article,
+        iframe {
+            width: 80%;
+            margin: 20px auto;
+        }
+    
+        iframe {
+            padding: 20px 0 0 0;
+        }
+
+        form {
+            width: 80%;
+            margin: 20px auto;
+        }
+    
+        form input,
+        #newPass {
+            margin: 10px 20px;
+            width: 80%;
+        }
+    
+        #fb,
+        #google,
+        #btnlogin,
+        #btnsignup {
+            margin: 10px auto;
+            width: 80%;
+        }
+    
+        .register-pg,
+        .login-pg {
+            margin: 10px 20px;
+        }
     }
     
-}
